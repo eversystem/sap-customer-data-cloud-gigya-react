@@ -37,7 +37,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignUp({ history }) {
   const classes = useStyles();
-  const { register, handleSubmit, errors } = useForm();
+//  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();  
   let regToken;
   let dataTest;
   const handleOnInitRegister = (response) => {
@@ -121,9 +122,10 @@ export default function SignUp({ history }) {
                 fullWidth
                 id="email"
                 label="Email Address"
-                name="email"
+//                name="email"
                 autoComplete="email"
-                inputRef={register({ required: true })}
+//                inputRef={register({ required: true })}
+                {...register("email", { required: true })}
               />
               {errors.email && <span>Please enter your email</span>}
             </Grid>
@@ -131,12 +133,13 @@ export default function SignUp({ history }) {
               <TextField
                 variant="outlined"
                 fullWidth
-                name="password"
+//                name="password"
                 label="Password"
                 type="password"
                 id="password"
                 autoComplete="current-password"
-                inputRef={register({ required: true })}
+//                inputRef={register({ required: true })}
+                {...register("password", { required: true })}
               />
               {errors.password && <span>Please enter a password</span>}
             </Grid>

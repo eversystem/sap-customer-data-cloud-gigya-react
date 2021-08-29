@@ -44,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignIn({ history }) {
   const classes = useStyles();
-  const { register, handleSubmit, errors } = useForm();
+//  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
   // The normal Gigya account login process makes use of
   // the react-hook-form library
   const handleLogin = async (data) => {
@@ -118,10 +119,11 @@ export default function SignIn({ history }) {
             fullWidth
             id="email"
             label="Email Address"
-            name="email"
+//            name="email"
             autoComplete="email"
             autoFocus
-            inputRef={register({ required: true })}
+            {...register("email", { required: true })}
+//            inputRef={register({ required: true })}
           />
           {errors.email && <span>Please enter an Email address</span>}
           <TextField
@@ -129,12 +131,13 @@ export default function SignIn({ history }) {
             margin="normal"
             required
             fullWidth
-            name="password"
+//            name="password"
             label="Password"
             type="password"
             id="password"
             autoComplete="current-password"
-            inputRef={register({ required: true })}
+//            inputRef={register({ required: true })}
+            {...register("password", { required: true })}
           />
           {errors.password && <span>Please enter a password</span>}
           <Button
