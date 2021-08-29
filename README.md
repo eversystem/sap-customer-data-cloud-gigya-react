@@ -6,6 +6,8 @@
 API key (original)
 3_mK2cmEzLkzhqe4MUrtPncxbv4wKsYAhsew0iVwhVUls3c_Jx_HLX434jAVpq5M_W
 
+https://api.dev.atrust-cert.com/test.html
+
 Atrust
 3_aILzSB0axXOKFjqeCpKMAObG4rp_2N54CKumFG0TOSBazAuD8dtazKTrVoiHDMi5
 
