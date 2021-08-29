@@ -156,7 +156,7 @@ export default function SignUp({ history }) {
           >
             Sign Up
           </Button>
-          <Grid container justify="flex-end">
+          <Grid container alignItems="flex-end">
             <Grid item>
               <Link href="/SignIn" variant="body2">
                 Already have an account? Sign in

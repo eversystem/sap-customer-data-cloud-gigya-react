@@ -1,5 +1,14 @@
 # Showcasing a Simple SAP Customer Data Cloud (Gigya) Login/ Register Flow in a React App
 
+## Test
+
++ID SAP Gigyaテスト用
+API key (original)
+3_mK2cmEzLkzhqe4MUrtPncxbv4wKsYAhsew0iVwhVUls3c_Jx_HLX434jAVpq5M_W
+
+Atrust
+3_aILzSB0axXOKFjqeCpKMAObG4rp_2N54CKumFG0TOSBazAuD8dtazKTrVoiHDMi5
+
 This app aims to showcase a simple **SAP Customer Data Cloud** (**Gigya**) login flow using the **WebSDK** inside a React application. It highlights the following scenarios:
 
 ## Registering a New Account

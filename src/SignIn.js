@@ -191,7 +191,7 @@ export default function SignIn({ history }) {
       >
         Y! Sign In With Yahoo
       </Button>
-      <Grid container justify="flex-end">
+      <Grid container alignItems="flex-end">
         <Grid item>
           <Link href="/SignUp" variant="body2">
             {"Don't have an account? Sign Up"}
