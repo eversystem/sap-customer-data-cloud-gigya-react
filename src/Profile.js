@@ -61,7 +61,7 @@ function Profile({ history }) {
    */
   const updateProfileScreenSet = () => {
     gigyaWebSDK.accounts.showScreenSet({
-      screenSet: "NewRaas4nov15-ProfileUpdate",
+      screenSet: "plusid-ProfileUpdate",
       onAfterSubmit: (response) => {
         setEmail(response.profile.email);
         setNickname(response.profile.firstName);

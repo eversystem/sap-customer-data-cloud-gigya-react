@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>+ID Test</title>
+    <script
+      type="text/javascript"
+      lang="javascript"
+      src="https://cdns.gigya.com/js/gigya.js?apikey=3_aILzSB0axXOKFjqeCpKMAObG4rp_2N54CKumFG0TOSBazAuD8dtazKTrVoiHDMi5"
+    ></script>
+  </head>
+  <body>
+    <h1>+ID Test for A trust</h1>
+    <div
+      id="runningCodeExample"
+      style="border: 1px solid skyblue; padding: 15px; width: 300px"
+    >
+      <p>
+        <a
+          href="#"
+          onclick="gigya.accounts.showScreenSet({screenSet:'plusid-RegistrationLogin'});"
+          >Login</a
+        >
+      </p>
+      <p>
+        <a
+          href="#"
+          onclick="gigya.accounts.showScreenSet({screenSet:'plusid-RegistrationLogin'});"
+          >Register</a
+        >
+      </p>
+      <p>
+        <a
+          href="#"
+          onclick="gigya.accounts.showScreenSet({screenSet:'plusid-ProfileUpdate'});"
+          >Edit Your Profile</a
+        >
+      </p>
+      <p>
+        <a href="#" onclick="gigya.accounts.logout({callback:onLogout});"
+          >Logout</a
+        >
+      </p>
+      <script>
+        function onLogout(response) {
+          if (response.errorCode == 0) {
+            alert('You are now logged out');
+          } else {
+            alert('Error :' + response.errorMessage);
+          }
+        }
+      </script>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>

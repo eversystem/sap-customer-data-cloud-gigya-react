@@ -80,6 +80,7 @@ export default function SignIn({ history }) {
     const loginProviderSocial = response.requestParams.provider;
     const email = response.user.email;
     const photo = response.user.photoURL;
+    console.log('loginCallback response', response)
     if (response.errorCode === 0) {
       // we need to do this because we get a different response depending
       // on whether we login using an account or social button. If you know
